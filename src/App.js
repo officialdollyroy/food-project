@@ -12,7 +12,7 @@ function App() {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:3000/Restaurant.json");
+        const response = await fetch("https://food-project-drepgur8n-officialdollyroys-projects.vercel.app/Restaurant.json");
         const data = await response.json();
         setRestaurantData(data);
       } catch (err) {

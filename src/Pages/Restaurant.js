@@ -10,7 +10,7 @@ const Restaurant = () => {
   useEffect(() => {
     const fetchApi = async () => {
       try {
-        const response = await fetch("http://localhost:3000/menu.json");
+        const response = await fetch("https://food-project-drepgur8n-officialdollyroys-projects.vercel.app/menu.json");
         const data = await response.json();
         setMenuData(data);
       } catch (err) {}
