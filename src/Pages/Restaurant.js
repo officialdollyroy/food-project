@@ -5,7 +5,7 @@ import MenuCategory from "../Components/MenuCategory";
 const Restaurant = () => {
   const { id } = useParams();
   const { restaurantData } = useOutletContext();
-  const restaurant = restaurantData.find((el) => el.info.id == id);
+  const restaurant = restaurantData.find((el) => el.info.id === id);
   const [menuData, setMenuData] = useState([]);
   useEffect(() => {
     const fetchApi = async () => {
