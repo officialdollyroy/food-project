@@ -7,7 +7,7 @@ const RestaurantCard = ({ res, show }) => {
       className="card"
       onClick={() => navigate(`/restautrant/${res.info.id}`)}
     >
-      <img src={`/images/${res.info.cloudinaryImageId}.avif`}></img>
+      <img src={`/images/${res.info.cloudinaryImageId}.avif`} alt="dfdsf"></img>
       <div className="card__details">
         <h3 className="card__name">{res.info.name}</h3>
         {show && (

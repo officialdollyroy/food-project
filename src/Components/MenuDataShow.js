@@ -40,7 +40,7 @@ const MenuDataShow = ({ item }) => {
           </button>
         )}
 
-        <img src={`/images/${item.card.info.imgName}`}></img>
+        <img src={`/images/${item.card.info.imgName}`} alt="asas"></img>
       </div>
     </div>
   );

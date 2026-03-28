@@ -31,10 +31,10 @@ const Carousuel = () => {
         <h2>Top restaurant chains in Noida</h2>
         <div className="carousel__controls">
           <button className="carousel__arrow" onClick={handleNextClick}>
-            <img src="/images/left.png" />
+            <img src="/images/left.png" alt="asas" />
           </button>
           <button className="carousel__arrow" onClick={handlePrevClick}>
-            <img src="/images/right.png" />
+            <img src="/images/right.png" alt="as" />
           </button>
         </div>
       </div>
