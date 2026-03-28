@@ -6,7 +6,7 @@ const MenuDataShow = ({ item }) => {
     (itm) => itm?.card?.info?.id === item?.card.info.id,
   );
   const quantityInCart = isItemInCart
-    ? cartItems.find((el) => el?.card?.info?.id == item?.card?.info?.id)
+    ? cartItems.find((el) => el?.card?.info?.id === item?.card?.info?.id)
         .quantity
     : 0;
 

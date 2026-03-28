@@ -25,7 +25,7 @@ function App() {
   }, []);
   const addItem = (item) => {
     const existingProduct = cartItems.findIndex((cartItem) => {
-      return cartItem.card.info.id == item.card.info.id;
+      return cartItem.card.info.id === item.card.info.id;
     });
     if (existingProduct !== -1) {
       const updateCart = [...cartItems];
@@ -38,7 +38,7 @@ function App() {
 
   const removeItem = (item) => {
     const existingProduct = cartItems.findIndex((cartItem) => {
-      return cartItem.card.info.id == item.card.info.id;
+      return cartItem.card.info.id === item.card.info.id;
     });
     if (existingProduct !== -1) {
       const updateCart = [...cartItems];
